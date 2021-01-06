@@ -1820,6 +1820,7 @@ a.toc-link {
 }
 
 .footer {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     border-top: 2px solid #f6f6f6;
     padding: 3rem 0;
     font-size: 115%
