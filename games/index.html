@@ -147,7 +147,7 @@ document.onkeypress=cancelSpace;
 <p>网址：若希望我踩踩你的博客</p>
 </blockquote>
 
-    <div id="aplayer-bqwHCtUy" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-ieOfoFYz" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="489815807" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"
     ></div>
  
@@ -634,6 +634,30 @@ document.onkeypress=cancelSpace;
 </script>
 
 <!-- MathJax -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
 
 <!-- Katex -->
 

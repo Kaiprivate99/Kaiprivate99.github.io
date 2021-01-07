@@ -1,50 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>升级hexo主题的相关问题</title>
-    <url>/2020/12/28/%E5%8D%87%E7%BA%A7Ayer%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>前言</strong>：学期刚结束，终于有空折腾博客了，看到作者已经更新此主题，便迫不及待的进行升级。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd themes</span><br><span class="line">cd 主题文件夹名</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
-
-<p>上面是主题的作者给出的升级方法，使用后会出现如下报错，git会提示某些文件会被覆盖，无法更新。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">error: Your local changes to the following files would be overwritten by merge:</span><br><span class="line">_config.yml</span><br><span class="line">Please commit your changes or stash them before you merge.</span><br><span class="line">Aborting</span><br></pre></td></tr></table></figure>
-
-<p>本着无损合并代码，保留之前我魔改主题后的代码，经过查阅git命令的相关知识，总结出了以下<strong>通用所有主题的升级方法</strong>。</p>
-<p><strong>注意：</strong>在操作以下步骤前，<strong>请一定要备份好你的hexo文件夹</strong>（不是主题文件夹，是整个博客的文件夹，如果操作失误，直接替换文件夹即可，不会造成任何损失）！！！</p>
+    <title>考研数学-高数篇-1-高等数学预备知识</title>
+    <url>/2021/01/07/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6-%E9%AB%98%E6%95%B0%E7%AF%87-1-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>前言：距离考研还有整一年的时间，本着不二战的原则，从今日起，开始总结考研数学的一些笔记以及重难点和典型例题，方便大家学习的同时也帮助我自己巩固基础，另外，本系列笔记均从张宇考研数学基础30讲及其配套课程精炼而成，本人能力有限，无法做到一讲一更，只能做到一天更新一个视频的内容（<strong>尽力还原</strong>宇哥所讲的精华知识点），知识点表述不好的地方还请评论区指正，我会及时修改。<br>PS：本系列笔记尽量做到日更，如未能做到，就给女朋友买一杯奶茶（<strong>早日把她养成大胖子</strong>）。</p>
+<a id="more"></a>
+<hr>
+<p><strong>2021.1.7更新：</strong></p>
+<h4 id="基础知识结构"><a href="#基础知识结构" class="headerlink" title="基础知识结构"></a>基础知识结构</h4><h5 id="1-函数的概念与特性"><a href="#1-函数的概念与特性" class="headerlink" title="1.函数的概念与特性"></a>1.函数的概念与特性</h5><ul>
+<li><p><strong>函数$<br>y=f(x)<br>$</strong><br>x:自变量，y:因变量，f:对应法则，其中，对于每一个自变量x都有<strong>唯一一个确定的</strong>因变量y与其对应。<br><font color=#FF0000>y具有唯一性</font></p>
+</li>
+<li><p><strong>反函数</strong>$<br>y=f^{-1}(x)<br>$<br>此处只需记住两个要点：</p>
 <ul>
-<li><p>跳转到主题的文件夹中</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd hexo文件夹&#x2F;themes&#x2F;主题文件夹</span><br></pre></td></tr></table></figure>
+<li><strong>严格单调函数必有反函数。</strong>（<font color=#FF0000>此处为考点⭐️</font>）<br>  其中严格单调函数指此函数的导数只大于0或只小于0。<br>  <strong>考题类型</strong>：选择中问以下哪些函数必有反函数？–选择函数的导数严格单调的选项。</li>
+<li>若把$<br>x=f^{-1}(y)<br>$与$<br>y=f(x)<br>$的图形画在同一坐标系中，则他们<strong>完全重合</strong>。<br>只有把反函数写成$<br>y=f^{-1}(x)<br>$后，才和$<br>y=f(x)<br>$关于$<br>y=x<br>$对称，<font color=#FF0000>实际上这也是字母x与y互换的结果</font>。</li>
+</ul>
 </li>
-<li><p>更新工作的状态树</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用如下命令，将文件放在堆栈中，获得主题作者提供的更新版本后，再弹栈：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git stash</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git stash pop</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>注意</strong>：上述三个git命令不要一口气用终端执行，一步一步来。</p>
-</li>
-<li><p>执行完git后，此时已成功一半，还需要以下步骤：</p>
-<p>1.确认git命令执行成功。</p>
-<p>2.打开主题文件夹中的_config.yml。<strong>注意：请用vscode打开yml文件，并且后续所有打开文件的操作都需用vscode打开！</strong></p>
-<p>3.在代码区域中会提示4项操作，请选择<strong>传入更改</strong>。</p>
-<p>4.由于各主题升级的内容不同，所以需要把你使用的主题文件夹内所有代码文件全部依次打开，查看是否有要传入的更改（重点检查.ejs和.css文件）。</p>
-</li>
-<li><p>步骤略微繁琐，但可以很棒的保护好你魔改后的主题～</p>
-</li>
-<li><p>如果觉得升级后的主题并不如之前好看，可以使用git return退回到上个版本，或直接把之前备份的hexo文件夹整体替换回去。</p>
+<li><p><strong>复合函数</strong><br>  需掌握复合的方法：<br>  例题：$<br>f(x)=x^2,f[φ(x)]=-x^2+2x+3<br>$,且$<br>φ(x)\geq0<br>$，求$<br>φ(x)<br>$。<br>解：由题目得：$<br>f[φ(x)]=φ^2(x)=-x^2+2x+3<br>$,于是$<br>φ(x)=\sqrt{-x^2+2x+3}<br>$</p>
 </li>
 </ul>
 ]]></content>
       <categories>
         <category>学习笔记</category>
+        <category>2022考研</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
-        <tag>技术</tag>
+        <tag>2022考研</tag>
+        <tag>考研数学</tag>
+        <tag>高等数学</tag>
       </tags>
   </entry>
   <entry>
@@ -111,6 +94,54 @@
         <tag>恋爱</tag>
         <tag>旅行</tag>
         <tag>2019年</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>升级hexo主题的相关问题</title>
+    <url>/2020/12/28/%E5%8D%87%E7%BA%A7Ayer%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>前言</strong>：学期刚结束，终于有空折腾博客了，看到作者已经更新此主题，便迫不及待的进行升级。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd themes</span><br><span class="line">cd 主题文件夹名</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+
+<p>上面是主题的作者给出的升级方法，使用后会出现如下报错，git会提示某些文件会被覆盖，无法更新。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">error: Your local changes to the following files would be overwritten by merge:</span><br><span class="line">_config.yml</span><br><span class="line">Please commit your changes or stash them before you merge.</span><br><span class="line">Aborting</span><br></pre></td></tr></table></figure>
+
+<p>本着无损合并代码，保留之前我魔改主题后的代码，经过查阅git命令的相关知识，总结出了以下<strong>通用所有主题的升级方法</strong>。</p>
+<p><strong>注意：</strong>在操作以下步骤前，<strong>请一定要备份好你的hexo文件夹</strong>（不是主题文件夹，是整个博客的文件夹，如果操作失误，直接替换文件夹即可，不会造成任何损失）！！！</p>
+<ul>
+<li><p>跳转到主题的文件夹中</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd hexo文件夹&#x2F;themes&#x2F;主题文件夹</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更新工作的状态树</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用如下命令，将文件放在堆栈中，获得主题作者提供的更新版本后，再弹栈：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git stash</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git stash pop</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>注意</strong>：上述三个git命令不要一口气用终端执行，一步一步来。</p>
+</li>
+<li><p>执行完git后，此时已成功一半，还需要以下步骤：</p>
+<p>1.确认git命令执行成功。</p>
+<p>2.打开主题文件夹中的_config.yml。<strong>注意：请用vscode打开yml文件，并且后续所有打开文件的操作都需用vscode打开！</strong></p>
+<p>3.在代码区域中会提示4项操作，请选择<strong>传入更改</strong>。</p>
+<p>4.由于各主题升级的内容不同，所以需要把你使用的主题文件夹内所有代码文件全部依次打开，查看是否有要传入的更改（重点检查.ejs和.css文件）。</p>
+</li>
+<li><p>步骤略微繁琐，但可以很棒的保护好你魔改后的主题～</p>
+</li>
+<li><p>如果觉得升级后的主题并不如之前好看，可以使用git return退回到上个版本，或直接把之前备份的hexo文件夹整体替换回去。</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>技术</tag>
       </tags>
   </entry>
   <entry>

@@ -175,7 +175,7 @@
                 name: 'postsNumberName',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,1,0,2,0,0,1,0],
+                data: [0,0,0,0,0,0,1,0,2,0,0,1,1],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -217,7 +217,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"恋爱日常","value":2},{"name":"学习笔记","value":1},{"name":"2018年","value":1}],
+                data: [{"name":"恋爱日常","value":2},{"name":"学习笔记","value":2},{"name":"2018年","value":1},{"name":"hexo","value":1},{"name":"2022考研","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -241,7 +241,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["恋爱","祝福","2020年","旅行","2019年","hexo","技术","2018年"]
+                data: ["恋爱","旅行","2019年","祝福","2020年","hexo","技术","2022考研","考研数学","高等数学"]
             }
         ],
         yAxis: [
@@ -254,7 +254,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [3,1,1,1,1,1,1,1],
+                data: [3,1,1,1,1,1,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -599,6 +599,30 @@
 </script>
 
 <!-- MathJax -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
 
 <!-- Katex -->
 
