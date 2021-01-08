@@ -308,7 +308,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">34</span>
+            <span class="post-count">47</span>
         </span>
     </span>
 
@@ -326,14 +326,11 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <p><strong>来自好朋友们的祝福～</strong><br><strong>希望大家一定不要错过从2分47秒开始的大彩蛋！</strong></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(life &lt; <span class="built_in">end</span>)</span><br><span class="line">  love++;</span><br></pre></td></tr></table></figure>
-
-
-
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=244739154&bvid=BV1Fv411y78a&cid=238637584&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
-
- 
+  <p><strong>来自好朋友们的祝福视频～</strong><br><strong>希望大家一定不要错过从2分47秒开始的大彩蛋！</strong><br><strong>请点击阅读更多收看视频～</strong></p> 
+      <a class="article-more-link" href="/2020/09/27/%E4%B8%A4%E5%91%A8%E5%B9%B4%E5%95%A6%EF%BC%81/"
+        >阅读更多</a
+      >
+       
       <!-- reward -->
       
     </div>
@@ -403,42 +400,11 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <p><strong>前言</strong>：学期刚结束，终于有空折腾博客了，看到作者已经更新此主题，便迫不及待的进行升级。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd themes</span><br><span class="line">cd 主题文件夹名</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
-
-<p>上面是主题的作者给出的升级方法，使用后会出现如下报错，git会提示某些文件会被覆盖，无法更新。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">error: Your local changes to the following files would be overwritten by merge:</span><br><span class="line">_config.yml</span><br><span class="line">Please commit your changes or stash them before you merge.</span><br><span class="line">Aborting</span><br></pre></td></tr></table></figure>
-
-<p>本着无损合并代码，保留之前我魔改主题后的代码，经过查阅git命令的相关知识，总结出了以下<strong>通用所有主题的升级方法</strong>。</p>
-<p><strong>注意：</strong>在操作以下步骤前，<strong>请一定要备份好你的hexo文件夹</strong>（不是主题文件夹，是整个博客的文件夹，如果操作失误，直接替换文件夹即可，不会造成任何损失）！！！</p>
-<ul>
-<li><p>跳转到主题的文件夹中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd hexo文件夹&#x2F;themes&#x2F;主题文件夹</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>更新工作的状态树</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用如下命令，将文件放在堆栈中，获得主题作者提供的更新版本后，再弹栈：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash pop</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>注意</strong>：上述三个git命令不要一口气用终端执行，一步一步来。</p>
-</li>
-<li><p>执行完git后，此时已成功一半，还需要以下步骤：</p>
-<p>1.确认git命令执行成功。</p>
-<p>2.打开主题文件夹中的_config.yml。<strong>注意：请用vscode打开yml文件，并且后续所有打开文件的操作都需用vscode打开！</strong></p>
-<p>3.在代码区域中会提示4项操作，请选择<strong>传入更改</strong>。</p>
-<p>4.由于各主题升级的内容不同，所以需要把你使用的主题文件夹内所有代码文件全部依次打开，查看是否有要传入的更改（重点检查.ejs和.css文件）。</p>
-</li>
-<li><p>步骤略微繁琐，但可以很棒的保护好你魔改后的主题～</p>
-</li>
-<li><p>如果觉得升级后的主题并不如之前好看，可以使用git return退回到上个版本，或直接把之前备份的hexo文件夹整体替换回去。</p>
-</li>
-</ul>
- 
+  <p><strong>前言</strong>：学期刚结束，终于有空折腾博客了，看到作者已经更新此主题，便迫不及待的进行升级。</p> 
+      <a class="article-more-link" href="/2020/12/28/%E5%8D%87%E7%BA%A7Ayer%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/"
+        >阅读更多</a
+      >
+       
       <!-- reward -->
       
     </div>
@@ -490,7 +456,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">210</span>
+            <span class="post-count">219</span>
         </span>
     </span>
 
@@ -508,8 +474,7 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h3 id="1-2019-9-13："><a href="#1-2019-9-13：" class="headerlink" title="1.2019.9.13："></a>1.2019.9.13：</h3><p>在学校上完课就直奔机场啦～</p>
-<img src="/2020/09/25/%E4%B8%8A%E6%B5%B7%E4%B9%8B%E8%A1%8C/1.JPG" class="" title="This is an image"> 
+  <p>记录我们第一次旅行～</p> 
       <a class="article-more-link" href="/2020/09/25/%E4%B8%8A%E6%B5%B7%E4%B9%8B%E8%A1%8C/"
         >阅读更多</a
       >
@@ -584,14 +549,11 @@
     <div class="article-entry" itemprop="articleBody">
        
   <p><strong>2018年9月27日20点</strong></p>
-<p>&ensp;&ensp;&ensp;&ensp;我们恋爱了。</p>
-<p>&ensp;&ensp;&ensp;&ensp;当时我们刚刚大一入学一个月，记得你是陪舍友去医院，初来乍到，人生地不熟的，很是折腾，也遇到了很多麻烦。你回来的时候是晚上快8点，我心里突然有一种以后想要一直照顾你的念头，于是匆匆忙忙的跑出宿舍截住刚走到楼下的你，对你表了白。</p>
-<p>&ensp;&ensp;&ensp;&ensp;你很诧异，但是可能太喜欢我了吧(怪我人格魅力太高😂)，即使我什么都没准备，说的话也很没有水平，但你还是答应了。</p>
-<p>&ensp;&ensp;&ensp;&ensp;可能有些事是命里注定的缘分吧。</p>
-<p>&ensp;&ensp;&ensp;&ensp;这一天，也是我爸妈21周年结婚纪念日。</p>
-<img src="/2020/07/20/%E7%9B%B8%E6%81%8B/1.jpeg" class="" title="相恋">
-
- 
+<p>&ensp;&ensp;&ensp;&ensp;我们恋爱了。</p> 
+      <a class="article-more-link" href="/2020/07/20/%E7%9B%B8%E6%81%8B/"
+        >阅读更多</a
+      >
+       
       <!-- reward -->
       
     </div>
@@ -620,7 +582,7 @@
 
                                     <footer class="footer">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/sakura.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/sakura.js"></script> -->
     <div class="outer">
 
         <ul>

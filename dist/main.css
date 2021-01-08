@@ -356,6 +356,7 @@ button {
 .article-date {
     text-decoration: none;
     color: #5c6b72
+    /* color: #ba59eb */
 }
 
 .archive-article-date:hover,
@@ -363,6 +364,7 @@ button {
 .article-category .article-category-link:hover,
 .article-date:hover {
     color: #5c6b72
+    /* color: #ba59eb */
 }
 
 .archive-article-inner {
@@ -547,7 +549,8 @@ button {
     bottom: 0;
     width: 8rem;
     height: 100%;
-    background-color: rgba(0, 0, 0, .8)
+    /* background-color: rgba(0, 0, 0, .8) */
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
 }
 
 .sidebar.on {
@@ -1646,13 +1649,23 @@ a.toc-link {
 .articles .article-entry {
     margin-top: 1rem;
     padding: 0 2rem 2rem;
-    border: 1px dashed #dfdede
+    border: 2px solid #dfdede;
+    background-image: linear-gradient(120deg, #ffffff 0%, #ffffff 100%);
+    border-radius: 20px;
+    transition-property: all;
+    transition-duration: 1.5s;
+    /* dashed */
+}
+
+.articles .article-entry:hover {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .articles .article-entry .article-more-link {
     display: inline-block;
     float: right;
-    background-color: #403e3e;
+    /* background-color: #403e3e; */
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
     padding: .5rem 1rem;
     border-radius: 4px;
     color: #fff!important;
@@ -2600,14 +2613,17 @@ pre .id {
 .navbar .nav .nav-item-link {
     display: block;
     padding: 1rem;
-    color: #bbb;
+    color: rgb(255, 255, 255);
+    /* color: #bbb; */
     text-decoration: none;
     cursor: pointer
 }
 
 .navbar .nav .nav-item-link:hover {
     opacity: .8;
-    background-color: #403e3e
+    /* background-color: #403e3e */
+    /* background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); */
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
 }
 
 .navbar .nav.nav-main .nav-item-link i {
