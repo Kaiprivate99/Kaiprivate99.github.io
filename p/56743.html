@@ -20,7 +20,7 @@
                                             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
                                             <title>
                                                 
-                                                    升级hexo主题的相关问题 |
+                                                    考研数学-高数篇-1-高等数学预备知识 |
                                                         
                                                             K_Q&#39;s Love
                                             </title>
@@ -85,7 +85,7 @@
                             <main class="content on">
                                 <section class="outer">
   <article
-  id="post-升级Ayer主题的相关问题"
+  id="post-考研数学-高数篇-1-高等数学预备知识"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -96,18 +96,18 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  升级hexo主题的相关问题
+  考研数学-高数篇-1-高等数学预备知识
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2020/12/28/%E5%8D%87%E7%BA%A7Ayer%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/" class="article-date">
-  <time datetime="2020-12-28T06:39:57.000Z" itemprop="datePublished">2020-12-28</time>
+      <a href="/p/56743.html" class="article-date">
+  <time datetime="2021-01-07T13:25:13.000Z" itemprop="datePublished">2021-01-07</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a> / <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/">hexo</a>
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a> / <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2022%E8%80%83%E7%A0%94/">2022考研</a>
   </div>
   
 <div class="word_count">
@@ -115,7 +115,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">541</span>
+            <span class="post-count">978</span>
         </span>
     </span>
 
@@ -124,56 +124,55 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1 分钟</span>
+            <span class="post-count">3 分钟</span>
         </span>
     </span>
 </div>
  
     </div>
       
+    <div class="tocbot"></div>
+
 
 
 
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p><strong>前言</strong>：学期刚结束，终于有空折腾博客了，看到作者已经更新此主题，便迫不及待的进行升级。</p>
+  <p>前言：距离考研还有整一年的时间，本着不二战的原则，从今日起，开始总结考研数学的一些笔记以及重难点和典型例题，方便大家学习的同时也帮助我自己巩固基础，另外，本系列笔记均从张宇考研数学基础30讲及其配套课程精炼而成，本人能力有限，无法做到一讲一更，只能做到一天更新一个视频的内容（<strong>尽力还原</strong>宇哥所讲的精华知识点），知识点表述不好的地方还请评论区指正，我会及时修改。<br>PS：本系列笔记尽量做到日更，如未能做到，就给女朋友买一杯奶茶（<strong>早日把她养成大胖子</strong>）。</p>
 <a id="more"></a>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd themes</span><br><span class="line">cd 主题文件夹名</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
-
-<p>上面是主题的作者给出的升级方法，使用后会出现如下报错，git会提示某些文件会被覆盖，无法更新。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">error: Your local changes to the following files would be overwritten by merge:</span><br><span class="line">_config.yml</span><br><span class="line">Please commit your changes or stash them before you merge.</span><br><span class="line">Aborting</span><br></pre></td></tr></table></figure>
-
-<p>本着无损合并代码，保留之前我魔改主题后的代码，经过查阅git命令的相关知识，总结出了以下<strong>通用所有主题的升级方法</strong>。</p>
-<p><strong>注意：</strong>在操作以下步骤前，<strong>请一定要备份好你的hexo文件夹</strong>（不是主题文件夹，是整个博客的文件夹，如果操作失误，直接替换文件夹即可，不会造成任何损失）！！！</p>
+<hr>
+<p><strong>2021.1.7更新：</strong></p>
+<h4 id="基础知识结构"><a href="#基础知识结构" class="headerlink" title="基础知识结构"></a>基础知识结构</h4><h5 id="1-函数的概念与特性"><a href="#1-函数的概念与特性" class="headerlink" title="1.函数的概念与特性"></a>1.函数的概念与特性</h5><ul>
+<li><p><strong>函数$<br>y=f(x)<br>$</strong><br>x:自变量，y:因变量，f:对应法则，其中，对于每一个自变量x都有<strong>唯一一个确定的</strong>因变量y与其对应。<br><font color=#FF0000>y具有唯一性</font></p>
+</li>
+<li><p><strong>反函数</strong>$<br>y=f^{-1}(x)<br>$<br>此处只需记住两个要点：</p>
 <ul>
-<li><p>跳转到主题的文件夹中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd hexo文件夹&#x2F;themes&#x2F;主题文件夹</span><br></pre></td></tr></table></figure>
+<li><strong>严格单调函数必有反函数。</strong>（<font color=#FF0000>此处为考点⭐️</font>）<br>  其中严格单调函数指此函数的导数只大于0或只小于0。<br>  <strong>考题类型</strong>：选择中问以下哪些函数必有反函数？–选择函数的导数严格单调的选项。</li>
+<li>若把$<br>x=f^{-1}(y)<br>$与$<br>y=f(x)<br>$的图形画在同一坐标系中，则他们<strong>完全重合</strong>。<br>只有把反函数写成$<br>y=f^{-1}(x)<br>$后，才和$<br>y=f(x)<br>$关于$<br>y=x<br>$对称，<font color=#FF0000>实际上这也是字母x与y互换的结果</font>。</li>
+</ul>
 </li>
-<li><p>更新工作的状态树</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用如下命令，将文件放在堆栈中，获得主题作者提供的更新版本后，再弹栈：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash pop</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>注意</strong>：上述三个git命令不要一口气用终端执行，一步一步来。</p>
-</li>
-<li><p>执行完git后，此时已成功一半，还需要以下步骤：</p>
-<p>1.确认git命令执行成功。</p>
-<p>2.打开主题文件夹中的_config.yml。<strong>注意：请用vscode打开yml文件，并且后续所有打开文件的操作都需用vscode打开！</strong></p>
-<p>3.在代码区域中会提示4项操作，请选择<strong>传入更改</strong>。</p>
-<p>4.由于各主题升级的内容不同，所以需要把你使用的主题文件夹内所有代码文件全部依次打开，查看是否有要传入的更改（重点检查.ejs和.css文件）。</p>
-</li>
-<li><p>步骤略微繁琐，但可以很棒的保护好你魔改后的主题～</p>
-</li>
-<li><p>如果觉得升级后的主题并不如之前好看，可以使用git return退回到上个版本，或直接把之前备份的hexo文件夹整体替换回去。</p>
+<li><p><strong>复合函数</strong><br>  需掌握复合的方法：<br>  例题：$<br>f(x)=x^2,f[φ(x)]=-x^2+2x+3<br>$,且$<br>φ(x)\geq0<br>$，求$<br>φ(x)<br>$。<br>解：由题目得：$<br>f[φ(x)]=φ^2(x)=-x^2+2x+3<br>$,于是$<br>φ(x)=\sqrt{-x^2+2x+3}<br>$</p>
 </li>
 </ul>
+<hr>
+<p><strong>2021.1.8更新：</strong></p>
+<h4 id="反函数和复合函数部分例题："><a href="#反函数和复合函数部分例题：" class="headerlink" title="反函数和复合函数部分例题："></a>反函数和复合函数部分例题：</h4><h6 id="1-根据函数求其反函数的表达式及其定义域"><a href="#1-根据函数求其反函数的表达式及其定义域" class="headerlink" title="1.根据函数求其反函数的表达式及其定义域"></a>1.根据函数求其反函数的表达式及其定义域</h6><img src="/p/56743/1.jpeg" class="" title="This is an image">
+<p>这道题需重点强调，题目中的原函数对应了一个<strong>基本求导公式</strong>$[ln(x+\sqrt{x^2\pm1})]’=\frac{1}{\sqrt{x^2\pm1}}$（<strong>此公式考研时应直接写出其导数，强烈建议背下来</strong>）</p>
+<p>这个求导公式我们也可以延伸到一个很<strong>常见的积分公式</strong>：$\int\frac{1}{\sqrt{x^2\pm a^2}}=ln|x+\sqrt{x^2\pm a^2}|+C$(其中根号中为加法时常见a=1，根号中为减法时$|x|&gt;|a|$)。<br>说到积分，此公式可引申出一个<strong>常见考法</strong>：求$<br>\int^1_{-1} [ln(x+\sqrt{x^2+1})+x^2]dx<br>$,由上图中1-1-38和积分定理可知，$<br>\int^1_{-1} ln(x+\sqrt{x^2+1})dx<br>$求积分的结果是0，因为求积分也是求面积，-1到0和0到1的面积抵消为零了，因此原积分就变为求$<br>\int^1_{-1} x^2dx<br>$，相应的结果为$<br>\frac{2}{3}<br>$。</p>
+<ul>
+<li>$y=ln(x+\sqrt{x^2+1})$被称为<strong>反双曲正弦函数</strong>。</li>
+<li>$y=\frac{e^x-e^{-x}}{2}$被称为<strong>双曲正弦函数</strong>。</li>
+<li>$y=\frac{e^x+e^{-x}}{2}$被称为<strong>双曲余弦函数/悬链线</strong>。<h6 id="2-根据两组函数-f-x-和-varphi-x-，求复合函数-f-varphi-x"><a href="#2-根据两组函数-f-x-和-varphi-x-，求复合函数-f-varphi-x" class="headerlink" title="2.根据两组函数$f(x)$和$\varphi(x)$，求复合函数$f[\varphi(x)]$"></a>2.根据两组函数$f(x)$和$\varphi(x)$，求复合函数$f[\varphi(x)]$</h6><img src="/p/56743/2.jpeg" class="" title="This is an image">
+此类题目要求会画图，根据图即可轻松解题，请大家自行尝试。</li>
+</ul>
+<h6 id="3-复合函数天花板题目（在高数的基础中为考研最高难度）"><a href="#3-复合函数天花板题目（在高数的基础中为考研最高难度）" class="headerlink" title="3.复合函数天花板题目（在高数的基础中为考研最高难度）"></a>3.复合函数天花板题目（在高数的基础中为考研最高难度）</h6><p><strong>题目：</strong>（请先自行做题再浏览解答）</p>
+<img src="/p/56743/3.jpeg" class="" title="This is an image">
+<p>解答：</p>
+<img src="/p/56743/4.jpeg" class="" title="This is an image">
+
+<p>此类题目首先要将$\varphi(x)$带入对应法则$f$中，此时复合函数的定义域要根据原法则进行转变。<br>然后将$\varphi(x)$的图画出，根据复合函数的定义域转换成$x$的定义域即可求得。</p>
+<p><font color=#FF0000>上面三道题为此两类题目的精华入门题，请一定反复练习！</font></p>
  
       <!-- reward -->
       
@@ -244,12 +243,12 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.wzkiglq.com/2020/12/28/%E5%8D%87%E7%BA%A7Ayer%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.wzkiglq.com/p/56743.html" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2022%E8%80%83%E7%A0%94/" rel="tag">2022考研</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/" rel="tag">考研数学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a></li></ul>
 
     </footer>
   </div>
@@ -257,19 +256,10 @@
    
   <nav class="article-nav">
     
-      <a href="/2021/01/07/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6-%E9%AB%98%E6%95%B0%E7%AF%87-1-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            考研数学-高数篇-1-高等数学预备知识
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/09/27/%E4%B8%A4%E5%91%A8%E5%B9%B4%E5%95%A6%EF%BC%81/" class="article-nav-link">
+      <a href="/p/12634.html" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">2018.9.27-2020.9.27 两周年啦！</div>
+        <div class="article-nav-title">升级hexo主题的相关问题</div>
       </a>
     
   </nav>

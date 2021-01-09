@@ -20,7 +20,7 @@
                                             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
                                             <title>
                                                 
-                                                    2018.9.27-2020.9.27 两周年啦！ |
+                                                    升级hexo主题的相关问题 |
                                                         
                                                             K_Q&#39;s Love
                                             </title>
@@ -85,7 +85,7 @@
                             <main class="content on">
                                 <section class="outer">
   <article
-  id="post-两周年啦！"
+  id="post-升级Ayer主题的相关问题"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -96,18 +96,18 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  2018.9.27-2020.9.27 两周年啦！
+  升级hexo主题的相关问题
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2020/09/27/%E4%B8%A4%E5%91%A8%E5%B9%B4%E5%95%A6%EF%BC%81/" class="article-date">
-  <time datetime="2020-09-26T16:00:00.000Z" itemprop="datePublished">2020-09-27</time>
+      <a href="/p/12634.html" class="article-date">
+  <time datetime="2020-12-28T06:39:57.000Z" itemprop="datePublished">2020-12-28</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%81%8B%E7%88%B1%E6%97%A5%E5%B8%B8/">恋爱日常</a>
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a> / <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/hexo/">hexo</a>
   </div>
   
 <div class="word_count">
@@ -115,7 +115,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">47</span>
+            <span class="post-count">541</span>
         </span>
     </span>
 
@@ -137,14 +137,43 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p><strong>来自好朋友们的祝福视频～</strong><br><strong>希望大家一定不要错过从2分47秒开始的大彩蛋！</strong><br><strong>请点击阅读更多收看视频～</strong></p>
+  <p><strong>前言</strong>：学期刚结束，终于有空折腾博客了，看到作者已经更新此主题，便迫不及待的进行升级。</p>
 <a id="more"></a>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(life &lt; <span class="built_in">end</span>)</span><br><span class="line">  love++;</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd themes</span><br><span class="line">cd 主题文件夹名</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
 
+<p>上面是主题的作者给出的升级方法，使用后会出现如下报错，git会提示某些文件会被覆盖，无法更新。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">error: Your local changes to the following files would be overwritten by merge:</span><br><span class="line">_config.yml</span><br><span class="line">Please commit your changes or stash them before you merge.</span><br><span class="line">Aborting</span><br></pre></td></tr></table></figure>
 
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=244739154&bvid=BV1Fv411y78a&cid=238637584&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+<p>本着无损合并代码，保留之前我魔改主题后的代码，经过查阅git命令的相关知识，总结出了以下<strong>通用所有主题的升级方法</strong>。</p>
+<p><strong>注意：</strong>在操作以下步骤前，<strong>请一定要备份好你的hexo文件夹</strong>（不是主题文件夹，是整个博客的文件夹，如果操作失误，直接替换文件夹即可，不会造成任何损失）！！！</p>
+<ul>
+<li><p>跳转到主题的文件夹中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd hexo文件夹&#x2F;themes&#x2F;主题文件夹</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更新工作的状态树</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用如下命令，将文件放在堆栈中，获得主题作者提供的更新版本后，再弹栈：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash pop</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>注意</strong>：上述三个git命令不要一口气用终端执行，一步一步来。</p>
+</li>
+<li><p>执行完git后，此时已成功一半，还需要以下步骤：</p>
+<p>1.确认git命令执行成功。</p>
+<p>2.打开主题文件夹中的_config.yml。<strong>注意：请用vscode打开yml文件，并且后续所有打开文件的操作都需用vscode打开！</strong></p>
+<p>3.在代码区域中会提示4项操作，请选择<strong>传入更改</strong>。</p>
+<p>4.由于各主题升级的内容不同，所以需要把你使用的主题文件夹内所有代码文件全部依次打开，查看是否有要传入的更改（重点检查.ejs和.css文件）。</p>
+</li>
+<li><p>步骤略微繁琐，但可以很棒的保护好你魔改后的主题～</p>
+</li>
+<li><p>如果觉得升级后的主题并不如之前好看，可以使用git return退回到上个版本，或直接把之前备份的hexo文件夹整体替换回去。</p>
+</li>
+</ul>
  
       <!-- reward -->
       
@@ -215,12 +244,12 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.wzkiglq.com/2020/09/27/%E4%B8%A4%E5%91%A8%E5%B9%B4%E5%95%A6%EF%BC%81/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.wzkiglq.com/p/12634.html" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2020%E5%B9%B4/" rel="tag">2020年</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%81%8B%E7%88%B1/" rel="tag">恋爱</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A5%9D%E7%A6%8F/" rel="tag">祝福</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
 
     </footer>
   </div>
@@ -228,19 +257,19 @@
    
   <nav class="article-nav">
     
-      <a href="/2020/12/28/%E5%8D%87%E7%BA%A7Ayer%E4%B8%BB%E9%A2%98%E7%9A%84%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/" class="article-nav-link">
+      <a href="/p/56743.html" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            升级hexo主题的相关问题
+            考研数学-高数篇-1-高等数学预备知识
           
         </div>
       </a>
     
     
-      <a href="/2020/09/25/%E4%B8%8A%E6%B5%B7%E4%B9%8B%E8%A1%8C/" class="article-nav-link">
+      <a href="/p/50720.html" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">上海之行</div>
+        <div class="article-nav-title">2018.9.27-2020.9.27 两周年啦！</div>
       </a>
     
   </nav>
