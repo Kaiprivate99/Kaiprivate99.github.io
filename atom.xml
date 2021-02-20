@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.wzkiglq.com/"/>
-  <updated>2021-01-10T12:27:22.781Z</updated>
+  <updated>2021-01-08T11:38:31.771Z</updated>
   <id>https://blog.wzkiglq.com/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>考研数学-高数篇-1-高等数学预备知识</title>
-    <link href="https://blog.wzkiglq.com/p/56743.html"/>
-    <id>https://blog.wzkiglq.com/p/56743.html</id>
-    <published>2021-01-07T13:25:13.000Z</published>
-    <updated>2021-01-10T12:27:22.781Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;前言：距离考研还有整一年的时间，本着不二战的原则，从今日起，开始总结考研数学的一些笔记以及重难点和典型例题，方便大家学习的同时也帮助我自己巩固基础，另外，本系列笔记均从张宇考研数学基础30讲及其配套课程精炼而成，本人能力有限，无法做到一讲一更，只能做到一天更新一个视频的内容（&lt;strong&gt;尽力还原&lt;/strong&gt;宇哥所讲的精华知识点），知识点表述不好的地方还请评论区指正，我会及时修改。&lt;br&gt;PS：本系列笔记尽量做到日更，如未能做到，就给女朋友买一杯奶茶（&lt;strong&gt;早日把她养成大胖子&lt;/strong&gt;）。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="学习笔记" scheme="https://blog.wzkiglq.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="2022考研" scheme="https://blog.wzkiglq.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2022%E8%80%83%E7%A0%94/"/>
-    
-    
-      <category term="2022考研" scheme="https://blog.wzkiglq.com/tags/2022%E8%80%83%E7%A0%94/"/>
-    
-      <category term="考研数学" scheme="https://blog.wzkiglq.com/tags/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="高等数学" scheme="https://blog.wzkiglq.com/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
   
   <entry>
     <title>升级hexo主题的相关问题</title>
