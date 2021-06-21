@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.wzkiglq.com/"/>
-  <updated>2021-01-08T11:38:31.771Z</updated>
+  <updated>2021-06-21T12:35:49.864Z</updated>
   <id>https://blog.wzkiglq.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>1111100111</title>
+    <link href="https://blog.wzkiglq.com/p/1e24.html"/>
+    <id>https://blog.wzkiglq.com/p/1e24.html</id>
+    <published>2021-06-20T16:00:00.000Z</published>
+    <updated>2021-06-21T12:35:49.864Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;2021-06-22&quot;&gt;&lt;a href=&quot;#2021-06-22&quot; class=&quot;headerlink&quot; title=&quot;2021.06.22&quot;&gt;&lt;/a&gt;2021.06.22&lt;/h2&gt;&lt;p&gt;标题是1111100111，是999的二进制，二进制转为十进制要从右到左用二进制的每个数去乘以2的相应次方，首项是2的0次方，末项是2的9次方，从0到9，从无到有。今天是第999天，我们度过它，就仿佛时间老人在对我们说：“恭喜你们一起跨过了第一个阶段，我在这个阶段的命名上给你们最想要的祝福，祝你们长长久久。”&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="恋爱" scheme="https://blog.wzkiglq.com/tags/%E6%81%8B%E7%88%B1/"/>
+    
+      <category term="2021年" scheme="https://blog.wzkiglq.com/tags/2021%E5%B9%B4/"/>
+    
+      <category term="纪念日" scheme="https://blog.wzkiglq.com/tags/%E7%BA%AA%E5%BF%B5%E6%97%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>升级hexo主题的相关问题</title>
@@ -109,9 +132,9 @@
       <category term="2018年" scheme="https://blog.wzkiglq.com/categories/2018%E5%B9%B4/"/>
     
     
-      <category term="2018年" scheme="https://blog.wzkiglq.com/tags/2018%E5%B9%B4/"/>
-    
       <category term="恋爱" scheme="https://blog.wzkiglq.com/tags/%E6%81%8B%E7%88%B1/"/>
+    
+      <category term="2018年" scheme="https://blog.wzkiglq.com/tags/2018%E5%B9%B4/"/>
     
   </entry>
   
